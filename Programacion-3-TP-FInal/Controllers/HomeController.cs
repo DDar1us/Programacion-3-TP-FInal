@@ -8,7 +8,7 @@ namespace Programacion_3_TP_FInal.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Inicio()
         {
             return View();
         }

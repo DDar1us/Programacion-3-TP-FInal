@@ -356,7 +356,7 @@ namespace Programacion_3_TP_FInal.Controllers
         {
             if (User.Identity.IsAuthenticated)
             {
-                return RedirectToAction("Index", "Manage");
+                return RedirectToAction("Inicio", "Manage");
             }
 
             if (ModelState.IsValid)
@@ -392,7 +392,7 @@ namespace Programacion_3_TP_FInal.Controllers
         public ActionResult LogOff()
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Inicio", "Home");
         }
 
         //

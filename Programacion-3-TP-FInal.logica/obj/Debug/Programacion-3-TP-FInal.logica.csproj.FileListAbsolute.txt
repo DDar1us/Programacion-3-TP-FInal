@@ -1,0 +1,5 @@
+F:\Users\Dar1us\Documents\Visual Studio 2015\Projects\Programacion-3-TP-FInal\Programacion-3-TP-FInal.logica\bin\Debug\Programacion-3-TP-FInal.logica.dll
+F:\Users\Dar1us\Documents\Visual Studio 2015\Projects\Programacion-3-TP-FInal\Programacion-3-TP-FInal.logica\bin\Debug\Programacion-3-TP-FInal.logica.pdb
+F:\Users\Dar1us\Documents\Visual Studio 2015\Projects\Programacion-3-TP-FInal\Programacion-3-TP-FInal.logica\obj\Debug\Programacion-3-TP-FInal.logica.csprojResolveAssemblyReference.cache
+F:\Users\Dar1us\Documents\Visual Studio 2015\Projects\Programacion-3-TP-FInal\Programacion-3-TP-FInal.logica\obj\Debug\Programacion-3-TP-FInal.logica.dll
+F:\Users\Dar1us\Documents\Visual Studio 2015\Projects\Programacion-3-TP-FInal\Programacion-3-TP-FInal.logica\obj\Debug\Programacion-3-TP-FInal.logica.pdb
