@@ -51,8 +51,8 @@ namespace Programacion_3_TP_FInal.Controllers
         }
 
         //
-        // GET: /Manage/Index
-        public async Task<ActionResult> Index(ManageMessageId? message)
+        // GET: /Manage/Inicio
+        public async Task<ActionResult> Inicio(ManageMessageId? message)
         {
             ViewBag.StatusMessage =
                 message == ManageMessageId.ChangePasswordSuccess ? "Su contraseña se ha cambiado."
@@ -64,7 +64,7 @@ namespace Programacion_3_TP_FInal.Controllers
                 : "";
 
             var userId = User.Identity.GetUserId();
-            var model = new IndexViewModel
+            var model = new InicioViewModel
             {
                 HasPassword = HasPassword(),
                 PhoneNumber = await UserManager.GetPhoneNumberAsync(userId),
@@ -142,7 +142,7 @@ namespace Programacion_3_TP_FInal.Controllers
             {
                 await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
             }
-            return RedirectToAction("Index", "Manage");
+            return RedirectToAction("Inicio", "Manage");
         }
 
         //
@@ -157,7 +157,7 @@ namespace Programacion_3_TP_FInal.Controllers
             {
                 await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
             }
-            return RedirectToAction("Index", "Manage");
+            return RedirectToAction("Inicio", "Manage");
         }
 
         //
@@ -187,7 +187,7 @@ namespace Programacion_3_TP_FInal.Controllers
                 {
                     await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
                 }
-                return RedirectToAction("Index", new { Message = ManageMessageId.AddPhoneSuccess });
+                return RedirectToAction("Inicio", new { Message = ManageMessageId.AddPhoneSuccess });
             }
             // Si llegamos a este punto, es que se ha producido un error, volvemos a mostrar el formulario
             ModelState.AddModelError("", "No se ha podido comprobar el teléfono");
@@ -203,14 +203,14 @@ namespace Programacion_3_TP_FInal.Controllers
             var result = await UserManager.SetPhoneNumberAsync(User.Identity.GetUserId(), null);
             if (!result.Succeeded)
             {
-                return RedirectToAction("Index", new { Message = ManageMessageId.Error });
+                return RedirectToAction("Inicio", new { Message = ManageMessageId.Error });
             }
             var user = await UserManager.FindByIdAsync(User.Identity.GetUserId());
             if (user != null)
             {
                 await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
             }
-            return RedirectToAction("Index", new { Message = ManageMessageId.RemovePhoneSuccess });
+            return RedirectToAction("Inicio", new { Message = ManageMessageId.RemovePhoneSuccess });
         }
 
         //
@@ -238,7 +238,7 @@ namespace Programacion_3_TP_FInal.Controllers
                 {
                     await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
                 }
-                return RedirectToAction("Index", new { Message = ManageMessageId.ChangePasswordSuccess });
+                return RedirectToAction("Inicio", new { Message = ManageMessageId.ChangePasswordSuccess });
             }
             AddErrors(result);
             return View(model);
@@ -267,7 +267,7 @@ namespace Programacion_3_TP_FInal.Controllers
                     {
                         await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
                     }
-                    return RedirectToAction("Index", new { Message = ManageMessageId.SetPasswordSuccess });
+                    return RedirectToAction("Inicio", new { Message = ManageMessageId.SetPasswordSuccess });
                 }
                 AddErrors(result);
             }

@@ -5,7 +5,7 @@ using Microsoft.Owin.Security;
 
 namespace Programacion_3_TP_FInal.Models
 {
-    public class IndexViewModel
+    public class InicioViewModel
     {
         public bool HasPassword { get; set; }
         public IList<UserLoginInfo> Logins { get; set; }

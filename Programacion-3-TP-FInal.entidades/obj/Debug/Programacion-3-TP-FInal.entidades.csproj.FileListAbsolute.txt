@@ -1,0 +1,5 @@
+F:\Users\Dar1us\Documents\Visual Studio 2015\Projects\Programacion-3-TP-FInal\Programacion-3-TP-FInal.entidades\bin\Debug\Programacion-3-TP-FInal.entidades.dll
+F:\Users\Dar1us\Documents\Visual Studio 2015\Projects\Programacion-3-TP-FInal\Programacion-3-TP-FInal.entidades\bin\Debug\Programacion-3-TP-FInal.entidades.pdb
+F:\Users\Dar1us\Documents\Visual Studio 2015\Projects\Programacion-3-TP-FInal\Programacion-3-TP-FInal.entidades\obj\Debug\Programacion-3-TP-FInal.entidades.csprojResolveAssemblyReference.cache
+F:\Users\Dar1us\Documents\Visual Studio 2015\Projects\Programacion-3-TP-FInal\Programacion-3-TP-FInal.entidades\obj\Debug\Programacion-3-TP-FInal.entidades.dll
+F:\Users\Dar1us\Documents\Visual Studio 2015\Projects\Programacion-3-TP-FInal\Programacion-3-TP-FInal.entidades\obj\Debug\Programacion-3-TP-FInal.entidades.pdb
